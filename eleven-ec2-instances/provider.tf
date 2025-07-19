@@ -8,7 +8,7 @@ terraform {
 
 backend "s3" {
   bucket = "ansible-tf-remote-state"
-  key = "three-ec2-instances-roles"
+  key = "eleven-ec2-instances-key"
   region = "us-east-1"
   dynamodb_table="ansible-tf-locking"
   }

@@ -3,6 +3,9 @@ resource "aws_instance" "expense" {
     ami           = data.aws_ami.rhel_info.id
     instance_type = each.value
     vpc_security_group_ids = [var.allow_all]
+
+
+
     tags = {
         Name = each.key
     }
